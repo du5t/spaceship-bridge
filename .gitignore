@@ -1,0 +1,8 @@
+*~
+target/*
+*~
+resources/*
+.cljs_rhino_repl/*
+out/
+/.nrepl-history
+/.nrepl-port
