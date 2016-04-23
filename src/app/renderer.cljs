@@ -15,5 +15,5 @@
   (reagent/render [main-page]  (.getElementById js/document "container")))
 
 (defn init []
-  (js/console.log "spaceship bridge now coming online...")
+  (js/console.log "spaceship bridge coming online...")
   (mount-root))

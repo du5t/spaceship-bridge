@@ -6,11 +6,12 @@
                  [adzerk/boot-cljs-repl "0.1.10-SNAPSHOT" :scope "test"]
                  [adzerk/boot-reload    "0.3.2-SNAPSHOT"  :scope "test"]
                  [com.cemerick/piggieback "0.2.1" :scope "test"]
-                 [weasel                  "0.7.0" :scope "test"]
+                 [weasel "0.7.0" :scope "test"]
                  [org.clojure/tools.nrepl "0.2.12" :scope "test"]
                  [reagent "0.5.1"]
                  [mathias/boot-sassc  "0.1.1" :scope "test"]
-                 [secretary "1.2.3"]])
+                 [secretary "1.2.3"]
+                 [timothypratley/reanimated "0.1.4"]])
 
 (require
  '[adzerk.boot-cljs      :refer [cljs]]
@@ -43,4 +44,4 @@
         (cljs      :ids #{"main"}
                    :compiler-options {:asset-path "target/main.out"
                                       :closure-defines {'app.main/dev? true}})
-        (sass :output-dir "target/css")))
+        (sass :output-dir "css")))
